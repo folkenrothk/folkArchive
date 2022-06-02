@@ -5,7 +5,7 @@
 ### 6.2.2022
 
 - Working on standards/decisions
-    - [File type](#File-type:)
+    - [File type](#file-type)
         - TEI-XML or RDF
     - Metadata Standards
         - DublinCore
