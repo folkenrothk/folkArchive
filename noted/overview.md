@@ -1,16 +1,19 @@
 # Overview of "Untitled Summer"
 
-## Trying our best <3
+## Notes in Progress for documentation and explanations later
+
+DBL 610 -- Kate Folkenroth (Global Health Studies & Integrative Informatics)
 
 ### 6.2.2022
 
 - Working on standards/decisions
     - [File type](#file-type)
         - TEI-XML or RDF
-    - Metadata Standards
+    - [Metadata standards](#metadata-standards)
         - DublinCore
-    - Coding Languages
+    - [Coding languages](#coding-languages)
         - GoLang (why)
+            binary library, netlify 
         - Html/CSS for static sites
     - Where?
         - GitHub 
@@ -19,7 +22,7 @@
         - Netlify? Hugo?
         - (etc)
     
-    #### File Type: 
+    #### File Type 
     ```xml vs rdf
     XML is a syntax while RDF is a data model
 
@@ -37,8 +40,52 @@
 
     ```
 
-    ####
+    ```Sparql
+    SPARQL (pronounced "sparkle" /ˈspɑːkəl/, a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language
+    ```
+
+    ```Otro Links
+    http://rdftef.sourceforge.net/
+    >> https://github.com/knakk/sparql
+
+    > consider database layer on archive to make static pages eventually
+
+    headless cms vs static site gen
+    ```
+
+    * RDF/XML seems likely
+    > xmls 
+
+    // !ch3 notes
+    !dead resource > not all research can be public 
+    who is the custodian of records // permission-ing
+    > someone asks for access > determined by custodian > given identifier/key
+        will they publish them? ethics?
+
+    this project is created only in respect to publicly released materials
+    technical solution
+        point is to release something publicly > private resources are stored elsewhere
 
 
+    #### Metadata Standards
+    ```Dublin bb
+    The Dublin Core™ is a set of fifteen basic categories (such as creator, title, subject, and publisher) for describing information resources (see http://dublincore.org/)
+
+
+    ```
+
+        ***
+    make a maximalist record >> flesh out a template
+    > then something that can parse it 
+    (dot notation? item.title)
+    provenance ---  item.ownership.3
+
+    * [Creating Metadata](https://www.dublincore.org/resources/userguide/creating_metadata/)
+
+    #### Coding Languages
+
+    /// recursion to parse through nodes of arrays
+        arrays & nodes >
+    make xml parsable
 
     //end of the line boi
