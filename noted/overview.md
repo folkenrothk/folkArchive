@@ -23,6 +23,10 @@ DBL 610 -- Kate Folkenroth (Global Health Studies & Integrative Informatics)
         - (etc)
     
     #### File Type 
+
+    * RDF/XML seems likely
+    > xmls 
+
     ```xml vs rdf
     XML is a syntax while RDF is a data model
 
@@ -53,10 +57,9 @@ DBL 610 -- Kate Folkenroth (Global Health Studies & Integrative Informatics)
     headless cms vs static site gen
     ```
 
-    * RDF/XML seems likely
-    > xmls 
 
     // !ch3 notes
+    ```
     !dead resource > not all research can be public 
     who is the custodian of records // permission-ing
     > someone asks for access > determined by custodian > given identifier/key
@@ -65,13 +68,25 @@ DBL 610 -- Kate Folkenroth (Global Health Studies & Integrative Informatics)
     this project is created only in respect to publicly released materials
     technical solution
         point is to release something publicly > private resources are stored elsewhere
+    ```
 
+    === 
+    ``` general xml rdf resources
+    https://www.w3schools.com/xml/xml_services.asp  >> general
+    https://www.w3schools.com/xml/default.asp >> study xml
+
+    https://www.dublincore.org/specifications/dublin-core/usageguide/#rdfxml
+        https://www.dublincore.org/specifications/dublin-core/dc-xml-guidelines/
+        https://www.dublincore.org/specifications/dublin-core/dcmes-xml/
+
+    ```
 
     #### Metadata Standards
     ```Dublin bb
     The Dublin Core™ is a set of fifteen basic categories (such as creator, title, subject, and publisher) for describing information resources (see http://dublincore.org/)
 
-
+    https://www.dublincore.org/specifications/dublin-core/dcmes-xml/
+    
     ```
 
         ***
