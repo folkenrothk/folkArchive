@@ -86,7 +86,7 @@ DBL 610 -- Kate Folkenroth (Global Health Studies & Integrative Informatics)
     The Dublin Core™ is a set of fifteen basic categories (such as creator, title, subject, and publisher) for describing information resources (see http://dublincore.org/)
 
     https://www.dublincore.org/specifications/dublin-core/dcmes-xml/
-    
+
     ```
 
         ***
@@ -104,3 +104,15 @@ DBL 610 -- Kate Folkenroth (Global Health Studies & Integrative Informatics)
     make xml parsable
 
     //end of the line boi
+
+
+    ##### Fun with words
+    - folk.chompe.rs
+        - kate.folk >> Kate Folkenroth
+    - folkArchive
+    - Allegheny Archives // Allegheny Archivists
+        - a collection of items donated and/or displayed on the campus
+        - purpose: to use for education
+    - Initiative: Curating the College
+    - An Institutional Repository 
+    - 

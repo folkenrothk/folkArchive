@@ -11,31 +11,32 @@ xmlns:dc="http://purl.org/dc/elements/1.1/">
 <dc:creator>Kate Folkenroth</dc:creator> <!--An entity responsible for making the resource.-->
 <dc:contributor> kate.folk</dc:contributor> <!--An entity responsible for making contributions to the resource.-->
 <dc:publisher> Allegheny College</dc:publisher> <!--An entity responsible for making the resource available.-->
-<dc:subject> Mental Health </dc:subject> <!--A topic of the resource.-->
+<dc:subject> GLobal Health Studies </dc:subject> <!--A topic of the resource.-->
     <!--*** what happens when there is more than one topic--> 
-<dc:description> A record of Kate's wellbeing in the form of a written journal.
+<dc:description> An Indonesian bis pole sculpture.
     </dc:description> <!-- An account of the resource. May include an abstract, table of contents, graphical representationm or a free-text account of the resource. -->
-<dc:identifier>AC00001</dc:identifier> <!--An unambiguous reference to the resource within a given context.-->
-<dc:relation><a src="sculpture.rdf">Indonesian Sculpture</a></dc:relation> <!--A related resource.-->
+<dc:identifier>AC00002</dc:identifier> <!--An unambiguous reference to the resource within a given context.-->
+<dc:relation><a src="itemTrial.rdf">Sanity</a></dc:relation> <!--A related resource.-->
     <!--** does this act as interlinking? would we want to link to a location on campus? -->
-<dc:source>Donated by: The Folkenroth Family</dc:source> <!--A related resource from which the described resource is derived.-->
-<dc:rights>personal rights</dc:rights> <!--Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.-->
+<dc:source>Donated by: Trustee</dc:source> <!--A related resource from which the described resource is derived.-->
+<dc:rights>some rights</dc:rights> <!--Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.-->
     <!--* this seems like an awful thing to deal with-->
-<dc:format> Journal </dc:format> <!--The file format, physical medium, or dimensions of the resource.-->
+<dc:format> Wooden Pole </dc:format> <!--The file format, physical medium, or dimensions of the resource.-->
 <dc:type>Physical Object</dc:type> <!--The nature or genre of the resource. ()-->
-<dc:title>Kate's Sanity</dc:title> <!--A name given to the resource.-->
-<dc:date>6/7/2022</dc:date> <!--A point or period of time associated with an event in the lifecycle of the resource.-->
-<dc:coverage>local</dc:coverage> <!--The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.-->
+<dc:title>Indonesian Bis Pole Sculpture</dc:title> <!--A name given to the resource.-->
+<dc:date>Spring 2019</dc:date> <!--A point or period of time associated with an event in the lifecycle of the resource.-->
+<dc:coverage>ghs</dc:coverage> <!--The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.-->
     <!--*** separate geographic and temporal? ^^ similar to the topics problem, can we have more than one and id them?-->
-    <dc:spatial>Ohio</dc:spatial>
-    <dc:temporal>2020s</dc:temporal>
+    <dc:spatial>Indonesia</dc:spatial>
+    <dc:temporal>1980s</dc:temporal>
 <dc:language>en</dc:language> <!--A language of the resource.-->
 
 <!--Other useful fields to consider-->
-<dc:Location> NVII </dc:Location><!--A spatial region or named place.-->
-<dc:PhyscialMedium> Paper</dc:PhyscialMedium><!--A physical material or carrier. Examples include paper, canvas, or DVD.-->
+<dc:Location> Pelletier Library</dc:Location><!--A spatial region or named place.-->
+<dc:PhyscialMedium> Ironwood, pigments, etc.</dc:PhyscialMedium><!--A physical material or carrier. Examples include paper, canvas, or DVD.-->
 <dc:Image> </dc:Image> <!--	A visual representation other than text.-->
     <!-- *** how do I put images in here?-->
 </rdf:Description>
+
 
 </rdf:RDF>
