@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">
+  <rdf:Description> <!-- or metadata or somethin-->
+    <!-- Descriptions from https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7 
+            Other terms/fields needed to identify this object must be developed from this source -->
+
+    <dc:identifier>AC00001</dc:identifier> <!--An unambiguous reference to the resource within a given context.-->
+    <dc:title>Kate's Sanity</dc:title> <!--A name given to the resource.-->
+    <dc:date>6/7/2022</dc:date> <!--A point or period of time associated with an event in the lifecycle of the resource.-->
+
+    <dc:Image> </dc:Image> <!--	A visual representation other than text.-->
+        <!-- *** how do I put images in here?-->
+    <dc:description> A record of Kate's wellbeing in the form of a written journal.
+        </dc:description> <!-- An account of the resource. May include an abstract, table of contents, graphical representationm or a free-text account of the resource. -->
+
+    <dc:type>Physical Object</dc:type> <!--The nature or genre of the resource. ()-->
+    <dc:format> Journal </dc:format> <!--The file format, physical medium, or dimensions of the resource.-->
+    <dc:PhysicalMedium> Paper</dc:PhysicalMedium><!--A physical material or carrier. Examples include paper, canvas, or DVD.-->
+    <dc:Location> NVII </dc:Location><!--A spatial region or named place.-->
+
+
+    <dc:subject> Mental Health </dc:subject> <!--A topic of the resource.-->
+        <!--*** what happens when there is more than one topic--> 
+    <dc:coverage>local</dc:coverage> <!--The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.-->
+        <!--*** separate geographic and temporal? ^^ similar to the topics problem, can we have more than one and id them?-->
+        <dc:spatial>Ohio</dc:spatial>
+        <dc:temporal>2020s</dc:temporal>
+
+    <dc:source>Donated by: The Folkenroth Family</dc:source> <!--A related resource from which the described resource is derived.-->
+    <dc:creator>Kate Folkenroth</dc:creator> <!--An entity responsible for making the resource.-->
+    <dc:contributor> kate.folk</dc:contributor> <!--An entity responsible for making contributions to the resource.-->
+    <dc:publisher> Allegheny College</dc:publisher> <!--An entity responsible for making the resource available.-->
+
+    <dc:rights>personal rights</dc:rights> <!--Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.-->
+        <!--* this seems like an awful thing to deal with-->
+    <dc:language>en</dc:language> <!--A language of the resource.-->
+
+
+    <dc:relation><a src="sculpture.rdf">Indonesian Sculpture</a></dc:relation> <!--A related resource.-->
+        <!--** does this act as interlinking? would we want to link to a location on campus? -->
+  </rdf:Description>
+</rdf:RDF>

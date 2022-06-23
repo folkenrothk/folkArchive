@@ -7,33 +7,13 @@ import (
   "os"
 )
 
-type XML struct {
-  Obj Obj `xml:"rdf Description"`
+type RDF struct {
+  XMLName         xml.Name
+  object          Object
 }
 
-type Obj struct {
-  XMLName    xml.Name
-  identifier string       `xml:"dc identifier"`
-	title      string       `xml:"dc title"`
-	date       string       `xml:"dc date"`
-	// Image
-	description    string   `xml:"dc description"`
-	typeItem       string   `xml:"dc type"`
-	format         string   `xml:"dc format"`
-	PhysicalMedium string   `xml:"dc PhysicalMedium"`
-	Location       string   `xml:"dc Location"`
-	subject        string   `xml:"dc subject"`
-	coverage       string   `xml:"dc coverage"`
-	spatial        string   `xml:"dc spatial"`
-	temporal       string   `xml:"dc temporal"`
-	source         string   `xml:"dc source"`
-	creator        string   `xml:"dc creator"`
-	contributor    string   `xml:"dc contributor"`
-	publisher      string   `xml:"dc publisher"`
-	rights         string   `xml:"dc rights"`
-	language       string   `xml:"dc language"`
-	// relation
-
+type Object struct {
+  XMLName         string          `xml:"Description"`
 }
 
 func main() {
@@ -47,9 +27,10 @@ func main() {
 
   fileBytes, _ := ioutil.ReadAll(xmlFile)
 
-  item := &XML{}
+  fmt.Print(string(fileBytes))
+
+  item := &RDF{}
+
   xml.Unmarshal(fileBytes, item)
-
-  fmt.Print(item.Obj)
-
+  fmt.Printf("%#v\n", item)
 }
