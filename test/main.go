@@ -1,36 +1,36 @@
 package main
 
 import (
-  "encoding/xml"
+	"encoding/xml"
 	"fmt"
-  "io/ioutil"
-  "os"
+	"io/ioutil"
+	"os"
 )
 
 type RDF struct {
-  XMLName         xml.Name
-  object          Object
+	XMLName xml.Name
+	object  Object
 }
 
 type Object struct {
-  XMLName         string          `xml:"Description"`
+	XMLName string `rdf:"Description"`
 }
 
 func main() {
-  xmlFile, err := os.Open("itemTrial.rdf")
+	xmlFile, err := os.Open("itemTrial.rdf")
 
-  if err != nil {
-    fmt.Println(err)
-  }
+	if err != nil {
+		fmt.Println(err)
+	}
 
-  defer xmlFile.Close()
+	defer xmlFile.Close()
 
-  fileBytes, _ := ioutil.ReadAll(xmlFile)
+	fileBytes, _ := ioutil.ReadAll(xmlFile)
 
-  fmt.Print(string(fileBytes))
+	fmt.Print(string(fileBytes))
 
-  item := &RDF{}
+	item := &RDF{}
 
-  xml.Unmarshal(fileBytes, item)
-  fmt.Printf("%#v\n", item)
+	xml.Unmarshal(fileBytes, item)
+	fmt.Printf("%#v\n", item, item.XMLName)
 }
