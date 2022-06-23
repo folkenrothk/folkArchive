@@ -1,0 +1,26 @@
+{
+    "items": [
+        {
+            "identifier": "AC00001",
+            "title": "Kate's Sanity",
+            "date": "6/7/2022",
+            "description": "A record of Kate's wellbeing in the form of a written journal.",
+            "type": "Physical Object",
+            "format": "Journal",
+            "PhyscialMedium": "Paper",
+            "Location":"NVII",
+            "subject":"Mental Health",
+            "coverage":"local",
+            "spatial":"Ohio",
+            "temporal":"2020s",
+            "source": "Donated by: The Folkenroth Family",
+            "creator":"Kate Folkenroth",
+            "contributor": "kate.folk",
+            "publisher": "Allegheny College",
+            "rights": "personal",
+            "language": "en"
+
+
+        }
+    ]
+}
