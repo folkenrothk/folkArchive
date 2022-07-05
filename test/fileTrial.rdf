@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:dcterms="http://purl.org/dc/terms/">
-  <rdf:Description>A B
-    <dcterms:identifier>1234</dcterms:identifier>
-  </rdf:Description>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description>
+
+<dc:creator>a</dc:creator>
+<dc:subject>d</dc:subject>
+<dc:title>l</dc:title>
+
+</rdf:Description>
 </rdf:RDF>
