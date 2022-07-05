@@ -1,3 +1,5 @@
+//https://www.golangprograms.com/go-language/struct.html
+
 package main
 
 import (
