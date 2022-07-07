@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+  "github.com/cbroglie/mustache"
 )
 
 type File struct {
@@ -60,12 +61,18 @@ func main() {
 
 	xml.Unmarshal(fileBytes, &item)
 
-	//tell me the truth doc
-	for i := 0; i < len(item.Rdf); i++ {
-		fmt.Println("Creator: " + item.Rdf[i].Creator)
-		fmt.Println("Item Title: " + item.Rdf[i].Title)
-		fmt.Println("Subject: " + item.Rdf[i].Subject)
-		fmt.Println("Identifier: " + item.Rdf[i].Identifier)
-	}
+	//tell me the truth, doc
+	//for i := 0; i < len(item.Rdf); i++ {
+	//	fmt.Println("Creator: " + item.Rdf[i].Creator)
+	//	fmt.Println("Item Title: " + item.Rdf[i].Title)
+	//	fmt.Println("Subject: " + item.Rdf[i].Subject)
+	//	fmt.Println("Identifier: " + item.Rdf[i].Identifier)
+	//}
+  stachio(item.Rdf[0])
+}
 
+func stachio(entry Obj) {
+  //template, _ := mustache.ParseFile("item.html.mustache")
+  rendered, _ := mustache.RenderFile("item.html.mustache", entry)
+  ioutil.WriteFile("item.html", []byte(rendered), 0644)
 }
