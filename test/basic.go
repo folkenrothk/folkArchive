@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+
+	"github.com/cbroglie/mustache"
 )
 
 type File struct {
@@ -68,4 +70,9 @@ func main() {
 		fmt.Println("Identifier: " + item.Rdf[i].Identifier)
 	}
 
+	stachio(item.Rdf[0])
+}
+
+func stachio(entry Obj) {
+	fmt.Println(mustache.RenderFileInLayout(entry, "item.html.mustache", nil))
 }

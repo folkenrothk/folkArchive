@@ -116,3 +116,40 @@ DBL 610 -- Kate Folkenroth (Global Health Studies & Integrative Informatics)
     - Initiative: Curating the College
     - An Institutional Repository 
     - 
+
+
+//
+use mustache
+
+
+template
+ the data will be throw
+
+
+ html w/ mustaches populated
+
+ ===
+
+ reading the implementation 
+
+ code in the parsing file to call things and then make things
+
+
+
+partials, for header and footers > folder structure 
+tempalate and partials and then load em all
+
+>> make themes 
+
+html w/ mustache > item w/ 
+
+musatche loops 
+non-exhaustive variables
+
+```
+<ul>
+{{{names}}}
+<li>{{{.}}}</li>
+{{{/names}}}
+</ul>
+```
