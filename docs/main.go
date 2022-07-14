@@ -77,3 +77,10 @@ func stachio(entry Obj) {
 	rendered, _ := mustache.RenderFile("item.html.mustache", entry)
 	ioutil.WriteFile("item.html", []byte(rendered), 0644)
 }
+
+/*
+func stachioPart(entry Obj) {
+	rendered, _ := mustache.RenderFilePartials("header.html.mustache", entry)
+	ioutil.WriteFile("")
+}
+*/
