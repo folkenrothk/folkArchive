@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
- 	"github.com/cbroglie/mustache"
+
+	"github.com/cbroglie/mustache"
 )
 
 type File struct {
@@ -68,19 +69,11 @@ func main() {
 	//	fmt.Println("Subject: " + item.Rdf[i].Subject)
 	//	fmt.Println("Identifier: " + item.Rdf[i].Identifier)
 	//}
-  stachio(item.Rdf[0])
-}
-
-<<<<<<< HEAD
 	stachio(item.Rdf[0])
 }
 
 func stachio(entry Obj) {
-	fmt.Println(mustache.RenderFileInLayout(entry, "item.html.mustache", nil))
-=======
-func stachio(entry Obj) {
-  //template, _ := mustache.ParseFile("item.html.mustache")
-  rendered, _ := mustache.RenderFile("item.html.mustache", entry)
-  ioutil.WriteFile("item.html", []byte(rendered), 0644)
->>>>>>> f3069a477a82bcc433c6e86720ee2c52cb26a6f2
+	//template, _ := mustache.ParseFile("item.html.mustache")
+	rendered, _ := mustache.RenderFile("item.html.mustache", entry)
+	ioutil.WriteFile("item.html", []byte(rendered), 0644)
 }
