@@ -5,8 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-
-	"github.com/cbroglie/mustache"
+  "github.com/cbroglie/mustache"
 )
 
 type File struct {
