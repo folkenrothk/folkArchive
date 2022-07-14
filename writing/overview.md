@@ -158,3 +158,10 @@ LUMAN--
 I cant run mustache on my machine im just having a time 
 are we using handlebars??
     if yes: https://www.youtube.com/watch?v=tb7081fzfdE
+
+
+can we have just empty fields?
+like an empty partial that isnt there for all items
+
+>>> actually how do we just have more  (linked) information for some but not for others
+
