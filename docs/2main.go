@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"path/filepath"
 
 	"github.com/cbroglie/mustache"
 )
@@ -44,9 +45,12 @@ type Obj struct {
 	//Relation string `xml:"relation"`
 }
 
+var fileArray []string
+
 func main() {
+	/* workingsection ***
 	// opening the file
-	xmlFile, err := os.Open("AC00001.rdf")
+	xmlFile, err := os.Open("AC00002.rdf")
 	// if there is an err, it's handled here
 	if err != nil {
 		fmt.Println("err", err)
@@ -65,54 +69,48 @@ func main() {
 	//tell me the truth, doc
 	//for i := 0; i < len(item.Rdf); i++ {
 	//	fmt.Println("Creator: " + item.Rdf[i].Creator)
-	//	fmt.Println("Item Title: " + item.Rdf[i].Title)
+	fmt.Println("Item Title: " + item.Rdf[0].Title)
 	//	fmt.Println("Subject: " + item.Rdf[i].Subject)
 	//	fmt.Println("Identifier: " + item.Rdf[i].Identifier)
 	//}
 
 	//!can we have an if statement running that if rdf cant be read dont make a page
 	//! another> how rdf to read multiple files and make respective pages?
-	stachio(item.Rdf[0])
-
-	/*
-
-		//var fileArray []string
-
-			filepath.Walk("./items", VisitFiles)
-
-			for i := 0; i < len(fileArray); i++ {
-				//fmt.Println(fileArray[i])
-				// opening the file
-				//xmlFile, err := os.Open(string(fileArray[i]))
-				xmlFile, err := os.Open("AC00001.rdf")
-				// if there is an err, it's handled here
-				if err != nil {
-					fmt.Println("err", err)
-				}
-				// defer so we can parse it
-				defer xmlFile.Close()
-
-				fileBytes, _ := ioutil.ReadAll(xmlFile)
-				var item File
-				xml.Unmarshal(fileBytes, &item)
-
-				fmt.Println(item.Rdf[0].Date)
-				for m := 0; m < len(item.Rdf); m++ {
-					fmt.Println("Title: " + item.Rdf[m].Title)
-					//stachio(item.Rdf[m])
-				}
-			}
+		stachio(item.Rdf[0])
 	*/
+
+	filepath.Walk("./items", VisitFiles)
+
+	for i := 0; i < len(fileArray); i++ {
+		//fmt.Println(fileArray[i])
+		// opening the file
+		xmlFile, err := os.Open(string(fileArray[i]))
+		//xmlFile, err := os.Open("AC00002.rdf")
+		// if there is an err, it's handled here
+		if err != nil {
+			fmt.Println("err", err)
+		}
+		// defer so we can parse it
+		defer xmlFile.Close()
+
+		fileBytes, _ := ioutil.ReadAll(xmlFile)
+		var item File
+		xml.Unmarshal(fileBytes, &item)
+
+		for m := 0; m < len(item.Rdf); m++ {
+			fmt.Println("Title: " + item.Rdf[m].Title)
+			//stachio(item.Rdf[m])
+		}
+	}
 }
 
 func stachio(entry Obj) {
 	//template, _ := mustache.ParseFile("item.html.mustache")
 	//rendered, _ := mustache.RenderFile("item.html.mustache", entry)
 	rendered, _ := mustache.RenderFileInLayout("item.html.mustache", "layout.html.mustache", entry)
-	ioutil.WriteFile("item.html", []byte(rendered), 0644)
+	ioutil.WriteFile("2item.html", []byte(rendered), 0644)
 }
 
-/*
 func VisitFiles(path string, info os.FileInfo, err error) error {
 	// looking through items folder for each item's file
 	if err != nil {
@@ -133,4 +131,3 @@ func VisitFiles(path string, info os.FileInfo, err error) error {
 	}
 	return nil
 }
-*/

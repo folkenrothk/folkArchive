@@ -9,25 +9,25 @@
     <description> A multi-medium senior project.
         </description> <!-- An account of the resource. May include an abstract, table of contents, graphical representationm or a free-text account of the resource. -->
 
-    <type></type> <!--The nature or genre of the resource. ()-->
-    <format></format> <!--The file format, physical medium, or dimensions of the resource.-->
-    <PhyscialMedium></PhyscialMedium><!--A physical material or carrier. Examples include paper, canvas, or DVD.-->
-    <Location></Location><!--A spatial region or named place.-->
+    <type>Physical Object</type> <!--The nature or genre of the resource. ()-->
+    <format>multi-medium</format> <!--The file format, physical medium, or dimensions of the resource.-->
+    <PhyscialMedium>Paper, sweat, tears</PhyscialMedium><!--A physical material or carrier. Examples include paper, canvas, or DVD.-->
+    <Location>Firepit</Location><!--A spatial region or named place.-->
 
-    <subject></subject> <!--A topic of the resource.-->
+    <subject>Global Health Studies and Integrative Informatics</subject> <!--A topic of the resource.-->
     <coverage></coverage> <!--The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.-->
         <spatial></spatial>
         <temporal></temporal>
 
     <source>Donated by: Kate Folkenroth</source> <!--A related resource from which the described resource is derived.-->
     <creator>Kate Folkenroth</creator> <!--An entity responsible for making the resource.-->
-    <contributor>Dr. Pamela Runestad & Doug Luman</contributor> <!--An entity responsible for making contributions to the resource.-->
+    <contributor>Dr. Pamela Runestad and Doug Luman</contributor> <!--An entity responsible for making contributions to the resource.-->
     <publisher>Allegheny College</publisher> <!--An entity responsible for making the resource available.-->
 
-    <rights></rights> <!--Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.-->
+    <rights>most rights</rights> <!--Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.-->
     <language>en</language> <!--A language of the resource.-->
 
-    <relation><a src="templateItem.rdf"></a></relation> <!--A related resource.-->
+    <relation><a src="ogItem-Sanity.rdf">Sanity</a></relation> <!--A related resource.-->
 
   </metadata>
 </rdf>
