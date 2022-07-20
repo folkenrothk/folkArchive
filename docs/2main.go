@@ -98,17 +98,18 @@ func main() {
 		xml.Unmarshal(fileBytes, &item)
 
 		for m := 0; m < len(item.Rdf); m++ {
-			fmt.Println("Title: " + item.Rdf[m].Title)
-			//stachio(item.Rdf[m])
+			//fmt.Println("ITEM: " + item.Rdf[m].Title)
+			webpageName := item.Rdf[m].Identifier + ".html"
+			stachio(item.Rdf[m], webpageName)
 		}
 	}
 }
 
-func stachio(entry Obj) {
+func stachio(entry Obj, pageName string) {
 	//template, _ := mustache.ParseFile("item.html.mustache")
 	//rendered, _ := mustache.RenderFile("item.html.mustache", entry)
 	rendered, _ := mustache.RenderFileInLayout("item.html.mustache", "layout.html.mustache", entry)
-	ioutil.WriteFile("2item.html", []byte(rendered), 0644)
+	ioutil.WriteFile(pageName, []byte(rendered), 0644)
 }
 
 func VisitFiles(path string, info os.FileInfo, err error) error {

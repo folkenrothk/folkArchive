@@ -2,7 +2,7 @@
 <rdf xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata>
     <identifier>AC00001</identifier> <!--An unambiguous reference to the resource within a given context.-->
-    <title>Kate's Comphrehensive Project</title> <!--A name given to the resource.-->
+    <title>Kate's Comprehensive Project</title> <!--A name given to the resource.-->
     <date>2022</date> <!--A point or period of time associated with an event in the lifecycle of the resource.-->
 
     <Image> </Image> <!--	A visual representation other than text.-->
