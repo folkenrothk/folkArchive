@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-  "github.com/cbroglie/mustache"
+
+	"github.com/cbroglie/mustache"
 )
 
 type File struct {
@@ -68,18 +69,16 @@ func main() {
 	//	fmt.Println("Subject: " + item.Rdf[i].Subject)
 	//	fmt.Println("Identifier: " + item.Rdf[i].Identifier)
 	//}
+
+	//!can we have an if statement running that if rdf cant be read dont make a page
+	//! another> how rdf to read multiple files and make respective pages?
 	stachio(item.Rdf[0])
 }
 
 func stachio(entry Obj) {
 	//template, _ := mustache.ParseFile("item.html.mustache")
-	rendered, _ := mustache.RenderFile("item.html.mustache", entry)
+
+	//rendered, _ := mustache.RenderFile("item.html.mustache", entry)
+	rendered, _ := mustache.RenderFileInLayout("item.html.mustache", "layout.html.mustache", entry)
 	ioutil.WriteFile("item.html", []byte(rendered), 0644)
 }
-
-/*
-func stachioPart(entry Obj) {
-	rendered, _ := mustache.RenderFilePartials("header.html.mustache", entry)
-	ioutil.WriteFile("")
-}
-*/

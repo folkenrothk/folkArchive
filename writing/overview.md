@@ -165,3 +165,6 @@ like an empty partial that isnt there for all items
 
 >>> actually how do we just have more  (linked) information for some but not for others
 
+//other opt: handlebars
+https://github.com/haoxins/handlebars
+
