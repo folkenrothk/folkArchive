@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata>
+    <identifier>AC00000</identifier> <!--An unambiguous reference to the resource within a given context.-->
+    <title></title> <!--A name given to the resource.-->
+    <date></date> <!--A point or period of time associated with an event in the lifecycle of the resource.-->
+
+    <Image> </Image> <!--	A visual representation other than text.-->
+    <description> 
+        </description> <!-- An account of the resource. May include an abstract, table of contents, graphical representationm or a free-text account of the resource. -->
+
+    <type></type> <!--The nature or genre of the resource. ()-->
+    <format></format> <!--The file format, physical medium, or dimensions of the resource.-->
+    <PhyscialMedium></PhyscialMedium><!--A physical material or carrier. Examples include paper, canvas, or DVD.-->
+    <Location></Location><!--A spatial region or named place.-->
+
+    <subject></subject> <!--A topic of the resource.-->
+    <coverage></coverage> <!--The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.-->
+        <spatial></spatial>
+        <temporal></temporal>
+
+    <source>Donated by:</source> <!--A related resource from which the described resource is derived.-->
+    <creator></creator> <!--An entity responsible for making the resource.-->
+    <contributor></contributor> <!--An entity responsible for making contributions to the resource.-->
+    <publisher>Allegheny College</publisher> <!--An entity responsible for making the resource available.-->
+
+    <rights></rights> <!--Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.-->
+    <language>en</language> <!--A language of the resource.-->
+
+    <relation><a src="templateItem.rdf"></a></relation> <!--A related resource.-->
+
+  </metadata>
+</rdf>
