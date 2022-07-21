@@ -168,3 +168,7 @@ like an empty partial that isnt there for all items
 //other opt: handlebars
 https://github.com/haoxins/handlebars
 
+
+
+i am designing the rdf file from scratch to be filled in by manually by the "creator" who will act as the curator for that item. 
+> future work can include creating a "friendlier interface to insert information"

@@ -1,16 +1,5 @@
-$.get('path/template.mustache', function (partialTemplate) {
+package main
 
-	var html = Mustache.render(template, obj, {
-	  templateRef: partialTemplate
-	});
-  
-	// ...
-  
-  }, 'text');
-  
+func main() {
 
-  cmd.get('header.html.mustache', function (partialHead) {
-	var header = Mustache.render(template, obj, {
-		templateHead: partialHeader
-	});
-}, 'text');
+}
