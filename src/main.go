@@ -99,7 +99,7 @@ func main() {
 
 		for m := 0; m < len(item.Rdf); m++ {
 			//fmt.Println("ITEM: " + item.Rdf[m].Title)
-			webpageName := item.Rdf[m].Identifier + ".html"
+			webpageName := "pages/" + item.Rdf[m].Identifier + ".html"
 			stachio(item.Rdf[m], webpageName)
 		}
 	}
